@@ -20,12 +20,17 @@ After installing the required dependencies, you can directly run the main traini
 python main_5cv.py
 This script performs 5-fold cross-validation for drug–disease–miRNA association prediction under the predefined experimental settings.
 # 4. Get result
-After running main_5cv.py, the experimental results are automatically saved in the project directory.
+After running `main_5cv.py`, the experimental results are automatically saved in the project directory.  
 Two result files will be generated:
-cv_summary_results.csv
-contains the averaged performance metrics over five folds for each negative sampling setting (DN, 1LN, 2LN, and MN).
-cv_detailed_results.csv
-contains the detailed results for each individual fold and for all training epochs.
-Both files record the performance of all training epochs. The final training epoch corresponds to the last row in the file. In our implementation, the best-performing model is selected from 50 epochs before the final training epoch. Therefore:
-Best epoch = (Final epoch number − 50)
+
+- **cv_summary_results.csv**: contains the averaged performance metrics over five folds for each negative sampling setting (DN, 1LN, 2LN, and MN).
+- **cv_detailed_results.csv**: contains the detailed results for each individual fold and for all training epochs.
+
+Both files record the performance of all training epochs.  
+The final training epoch corresponds to the last row in the file.
+
+In our implementation, the best-performing model is selected from 50 epochs before the final training epoch.  
+**Best epoch = (Final epoch number − 50)**
+
 Users can locate the row corresponding to this epoch in the result file to obtain the reported best performance.
+
