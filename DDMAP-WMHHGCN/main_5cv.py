@@ -325,8 +325,8 @@ if __name__ == '__main__':
     # 6) 构建模型D:\shaoying\MCHNN-main\（测试中15)_3维+3维(没有分子图和对比学习)修改参数256-128
     results_dir = "D:/shaoying/MCHNN-main/（实验15)_256-128 - 副本/results2-10"
     import time, os
-    csv_log_file = os.path.join(results_dir, "result_五折交叉验证结果.csv")
-    csv_log_file1 = os.path.join(results_dir, "result_每折的结果.csv")
+    csv_log_file = os.path.join(results_dir, "cv_summary_results.csv")
+    csv_log_file1 = os.path.join(results_dir, "cv_detailed_results.csv")
     os.makedirs(results_dir, exist_ok=True)
     with open(csv_log_file, "w", newline="") as f:
         writer = csv.writer(f)
