@@ -1,7 +1,8 @@
 # DDMAP-WMHHGCN
 A Weighted Multi-Head Hypergraph Convolutional Network for Drug–Disease–miRNA Association Prediction.
 # 1. Description
-This repository implements DDMAP-WMHHGCN, an end-to-end weighted hypergraph neural network for drug–disease–miRNA association prediction. The framework includes hypergraph construction, high-order representation learning, structured negative sampling, and triplet-level prediction and optimization.
+This repository implements DDMAP-WMHHGCN, an end-to-end weighted hypergraph neural network for drug–disease–miRNA association prediction. The framework includes Raw feature encoding and weighted hypergraph construction, Multi-head hypergraph convolutional network, Stratified negative samples sampling, and Prediction and model optimization.
+![Overall Framework](DN.png)
 # 2. Requirements
 Python == 3.7
 PyTorch == 1.8.0
@@ -21,10 +22,10 @@ This script performs 5-fold cross-validation for drug–disease–miRNA associat
 # 4. Get result
 After running main_5cv.py, the experimental results are automatically saved in the project directory.
 Two result files will be generated:
-result_五折交叉验证结果.csv
-Contains the averaged performance metrics over five folds for each negative sampling setting (DN, 1LN, 2LN, and MN).
-result_每折的结果.csv
-Contains the detailed results for each individual fold and for all training epochs.
+cv_summary_results.csv
+contains the averaged performance metrics over five folds for each negative sampling setting (DN, 1LN, 2LN, and MN).
+cv_detailed_results.csv
+contains the detailed results for each individual fold and for all training epochs.
 Both files record the performance of all training epochs. The final training epoch corresponds to the last row in the file. In our implementation, the best-performing model is selected from 50 epochs before the final training epoch. Therefore:
 Best epoch = (Final epoch number − 50)
 Users can locate the row corresponding to this epoch in the result file to obtain the reported best performance.
