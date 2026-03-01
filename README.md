@@ -4,17 +4,17 @@ A Weighted Multi-Head Hypergraph Convolutional Network for Drug–Disease–miRN
 This repository implements DDMAP-WMHHGCN, an end-to-end weighted hypergraph neural network for drug–disease–miRNA association prediction. The framework includes Raw feature encoding and weighted hypergraph construction, Multi-head hypergraph convolutional network, Stratified negative samples sampling, and Prediction and model optimization.
 ![Overall Framework](DN.png)
 # 2. Requirements
-Python == 3.7
-PyTorch == 1.8.0
-torch-geometric == 1.7.2
-torch-scatter == 2.0.8
-torch-sparse == 0.6.12
-torchvision == 0.9.0
-torchaudio == 0.8.0
-numpy == 1.20.2
-scipy == 1.7.3
-pandas == 1.2.5
-scikit-learn == 1.0.2
+- Python == 3.7  
+- PyTorch == 1.8.0  
+- torch-geometric == 1.7.2  
+- torch-scatter == 2.0.8  
+- torch-sparse == 0.6.12  
+- torchvision == 0.9.0  
+- torchaudio == 0.8.0  
+- numpy == 1.20.2  
+- scipy == 1.7.3  
+- pandas == 1.2.5  
+- scikit-learn == 1.0.2  
 # 3. How to use
 After installing the required dependencies, you can directly run the main training and evaluation script:
 python main_5cv.py
