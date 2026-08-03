@@ -1,4 +1,4 @@
-# main_indep_hyper_graph_16_mirna_updated_可运行.py
+# main_5cv.py
 
 import os
 import torch
@@ -322,8 +322,8 @@ if __name__ == '__main__':
         optimizers[i], mode='max', factor=0.5, patience=3, min_lr=1e-6, verbose=True
     ) for i in range(5)]
 
-    # 6) 构建模型D:\shaoying\MCHNN-main\（测试中15)_3维+3维(没有分子图和对比学习)修改参数256-128
-    results_dir = "D:/shaoying/MCHNN-main/（实验15)_256-128 - 副本/results2-10"
+    # 6) 构建模型
+    results_dir = "./results2-10"
     import time, os
     csv_log_file = os.path.join(results_dir, "cv_summary_results.csv")
     csv_log_file1 = os.path.join(results_dir, "cv_detailed_results.csv")
