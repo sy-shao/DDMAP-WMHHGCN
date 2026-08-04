@@ -1,7 +1,7 @@
-# DDMAP-WMHHGCN
-A Weighted Multi-Head Hypergraph Convolutional Network for Drug–Disease–miRNA Association Prediction.
+# TADDM-WMHHGCN
+A Weighted Multi-Head Hypergraph Convolutional Network for Predicting Triple Associations among Drugs, Diseases, and miRNAs.
 # 1. Description
-This repository implements DDMAP-WMHHGCN, an end-to-end weighted hypergraph neural network for drug–disease–miRNA association prediction. The framework includes Raw feature encoding and weighted hypergraph construction, Multi-head hypergraph convolutional network, Stratified negative samples sampling, and Prediction and model optimization.
+This repository implements TADDM-WMHHGCN, an end-to-end weighted hypergraph neural network for drug–disease–miRNA association prediction. The framework includes Raw feature encoding and weighted hypergraph construction, Multi-head hypergraph convolutional network, Stratified negative samples sampling, and Prediction and model optimization.
 ![Overall Framework](Framework.png)
 # 2. Requirements
 - Python == 3.7  
